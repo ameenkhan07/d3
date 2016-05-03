@@ -1,12 +1,6 @@
         break;
       }
-      while (++i < n) if ((b = array[i]) != null && a > b) a = b;
-    } else {
-      while (++i < n) if ((b = f.call(array, array[i], i)) != null && b >= b) {
-        a = b;
-        break;
-      }
-      while (++i < n) if ((b = f.call(array, array[i], i)) != null && a > b) a = b;
+    ((b = f.call(array, array[i], i)) != null && a > b) a = b;
     }
     return a;
   };
